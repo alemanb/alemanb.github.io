@@ -7,6 +7,8 @@ import {
     CardTitle,
   }  from "./components/ui/card"
 import alemanb from "../public/alemanb.jpg"
+import tamulogo from "../public/primaryTAM.png"
+import resume from "../public/Benjamin_Aleman_2025.pdf"
 import { Avatar, AvatarImage, AvatarFallback } from "./components/ui/avatar"
 import { Separator } from "./components/ui/separator"
 
@@ -24,7 +26,7 @@ const MainCard = () => {
             <CardDescription>
                 <h2 className="mb-2">Computer Science | Music Technology at Texas A&M University</h2>
                 <div className = "flex h-5 items-center space-x-4">
-                    <a href="../public/Benjamin_Aleman_2025.pdf" className="text-lg font-semibold">resume</a>
+                    <a href={resume} className="text-lg font-semibold">resume</a>
                     <Separator orientation="vertical"/>
                     <a href="https://www.github.com/alemanb" className="text-lg font-semibold">github</a>
                     <Separator orientation="vertical"/>
@@ -35,7 +37,7 @@ const MainCard = () => {
         <CardContent className= "grid gap-4">
             <p>Howdy! I am currently a computer science student at Texas A&M University interested in
             software development and machine learning.</p>
-            <img src="../public/primaryTAM.png" alt="" className=""/>
+            <img src={tamulogo} alt="" className=""/>
         </CardContent>
         <CardFooter>
         </CardFooter>
