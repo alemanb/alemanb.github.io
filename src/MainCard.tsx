@@ -14,7 +14,7 @@ import { ScrollArea } from "./components/ui/scroll-area"
 
 const MainCard = () => {
     return (
-        <Card>``
+        <Card>
         <CardHeader>
             <CardTitle className="flex gap-4">
                 <h1 className="">Benjamin Aleman</h1>
@@ -37,6 +37,7 @@ const MainCard = () => {
         <CardContent className= "grid">
             <p>Howdy! I am currently a sophmore computer science student at Texas A&M University interested in software development and machine learning.</p>
             <br></br>
+            <p className="text-sm text-muted-foreground">shh.. hey, scroll me</p>
             <ScrollArea className="bg-red-200 h-70 rounded-md p-4">
                 <h2 className="border-b-2 border-red-400">projects</h2>
                 <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
