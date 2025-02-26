@@ -7,14 +7,14 @@ import {
     CardTitle,
   }  from "./components/ui/card"
 import alemanb from "../public/alemanb.jpg"
-import tamulogo from "../public/primaryTAM.png"
 import resume from "../public/Benjamin_Aleman_2025.pdf"
 import { Avatar, AvatarImage, AvatarFallback } from "./components/ui/avatar"
 import { Separator } from "./components/ui/separator"
+import { ScrollArea } from "./components/ui/scroll-area"
 
 const MainCard = () => {
     return (
-        <Card>
+        <Card>``
         <CardHeader>
             <CardTitle className="flex gap-4">
                 <h1 className="">Benjamin Aleman</h1>
@@ -34,10 +34,24 @@ const MainCard = () => {
                 </div>
             </CardDescription>
         </CardHeader>
-        <CardContent className= "grid gap-4">
-            <p>Howdy! I am currently a computer science student at Texas A&M University interested in
-            software development and machine learning.</p>
-            <img src={tamulogo} alt="" className=""/>
+        <CardContent className= "grid">
+            <p>Howdy! I am currently a sophmore computer science student at Texas A&M University interested in software development and machine learning.</p>
+            <br></br>
+            <ScrollArea className="bg-red-200 h-70 rounded-md p-4">
+                <h2 className="border-b-2 border-red-400">projects</h2>
+                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                    <li><div className="font-semibold">This website!</div> | Typescript, React, Shadcn</li>
+                    <li><div className="font-semibold">CV-Theremin</div> | C++, JUCE, OpenCV</li>
+                    <li><div className="font-semibold">DummyStocks</div> | TypeScript, Python, React, Flask, OpenAI, pandas</li>
+                </ul>
+                <h2 className="border-b-2 border-red-400">about me</h2>
+                <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+                    <li>Im trying to become a professional cook! (not really)</li>
+                    <li>Have really gotten into dungeons and dragons</li>
+                    <li>I also like to make electronic music in my spare time</li>
+                </ul>
+            </ScrollArea>   
+            {/* <img src={tamulogo} alt="" className=""/> */}
         </CardContent>
         <CardFooter>
         </CardFooter>
